@@ -1,0 +1,29 @@
+{
+  "name": "urlutils",
+  "version": "0.0.1",
+  "description": "The `window.URL` constructor for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cofounders/urlutils.git"
+  },
+  "keywords": [
+    "uri",
+    "url",
+    "urlutils"
+  ],
+  "author": "Sebastiaan Deckers <seb@ninja.sg>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cofounders/urlutils/issues"
+  },
+  "homepage": "https://github.com/cofounders/urlutils",
+  "dependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "URIjs": "*"
+  }
+}
