@@ -2,6 +2,10 @@ var expect = require('chai').expect;
 var URL = require('../');
 
 describe('URL', function () {
+  it('toString', function () {
+    expect('' + (new URL('http://example.com/')))
+      .to.equal('http://example.com/');
+  });
   it('simple output', function () {
     with (new URL('https://www.example.com:8080/search?foo=bar#lol')) {
       expect(href).to.equal('https://www.example.com:8080/search?foo=bar#lol');

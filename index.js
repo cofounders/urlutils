@@ -7,7 +7,7 @@ var URL = function (url, base) {
     uri.relativeTo(base);
   }
 
-  var url = {};
+  var url = Object.create(URL.prototype);
  
   Object.defineProperty(url, 'origin', {
     get: function () {
@@ -35,7 +35,7 @@ var URL = function (url, base) {
       });
     });
 
-  url.prototype = URL.prototype;
+  url.prototype = this.prototype;
 
   return url;
 };
