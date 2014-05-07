@@ -1,10 +1,10 @@
 {
   "name": "urlutils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The `window.URL` constructor for Node",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",

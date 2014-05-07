@@ -4,7 +4,7 @@ var URL = function (url, base) {
   var uri = URI(url);
 
   if (typeof base === 'string') {
-    uri.relativeTo(base);
+    uri = uri.absoluteTo(base);
   }
 
   var url = Object.create(URL.prototype);
